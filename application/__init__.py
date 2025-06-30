@@ -10,10 +10,10 @@ mysql = MySQL()
 def create_app():
 	app = Flask(__name__)
 
-	app.config['MYSQL_HOST'] = 'localhost'
+	app.config['MYSQL_HOST'] = 'tasktracker-mysql'
 	app.config['MYSQL_USER'] = 'taskuser'
-	app.config['MYSQL_PASSWORD'] = 'Martinez88M@'
-	app.config['MYSQL_DB'] = 'tasktracker'
+	app.config['MYSQL_PASSWORD'] = 'taskpass'
+	app.config['MYSQL_DB'] = 'tasktrackerdb'
 
 	mysql.init_app(app)
 	CORS(app)

@@ -1,0 +1,4 @@
+venv/
+__pycache__/
+*.pyc
+postman-linux-x64.tar.gz
